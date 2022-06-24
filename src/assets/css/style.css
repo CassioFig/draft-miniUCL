@@ -1,0 +1,13 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-size: 100%;
+}
+.team {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col {
+    margin: 0;
+    padding: 0;
+}
