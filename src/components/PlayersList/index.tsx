@@ -1,13 +1,13 @@
-import { Accordion, Col, Container, Figure, Image, Modal, Row } from "react-bootstrap";
-import { classes, IClassTypes, IPlayer, players } from "../../assets/data";
-import Player from '../../assets/images/goleiro.jpg'
+import { Accordion, Col, Container, Image, Modal, Row } from "react-bootstrap";
+import { classes, IClassTypes, players } from "../../assets/data";
 
 type Props = {
 	show: boolean
 	close: any
+	addPlayer: any
 }
 
-export default function PlayersList({ show, close }: Props) {
+export default function PlayersList({ show, close, addPlayer }: Props) {
 
 	const getPlayersByClass = (class_: IClassTypes) => {
 		return players.filter((player) => {
@@ -40,7 +40,11 @@ export default function PlayersList({ show, close }: Props) {
 											{
 												getPlayersByClass(class_.class).map((player, index) => {
 													return (
-														<Row className="player-option" key={'player-option-' + index}>
+														<Row 
+															className="player-option" 
+															key={'player-option-' + index}
+															onClick={() => addPlayer(player)}
+														>
 															<Col md={4}>
 																<Image
 																	src={player.image}
