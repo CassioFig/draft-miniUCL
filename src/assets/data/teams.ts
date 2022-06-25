@@ -1,7 +1,7 @@
 import BrazilShield from '../images/escudo-brasil-teste.jpeg'
 import { IPlayer } from './players'
 
-type ITeams = {
+export type ITeams = {
     name: string,
     image: string,
     players: IPlayer[]
@@ -14,57 +14,57 @@ export const teams: ITeams[] = [
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Alemanha',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'China',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Argentina',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Italia',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Holanda',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Espanha',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Belgica',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Inglaterra',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'França',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Croâcia',
         image: BrazilShield,
         players: []
     },
     {
-        name: 'Brasil',
+        name: 'Chile',
         image: BrazilShield,
         players: []
     },
