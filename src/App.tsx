@@ -11,6 +11,8 @@ export default function App() {
     const teamsExist = localStorage.getItem('teams')
     if (!teamsExist) localStorage.setItem('teams', JSON.stringify(teams))
     else setTeams(JSON.parse(localStorage.getItem('teams')))
+
+    if (!teamsExist) localStorage.setItem('playersSelected', JSON.stringify([]))
   }, [])
 
   return (

@@ -30,8 +30,7 @@ export default function Team({ name, shield }: Props) {
         teams.find(team => team.name === name).players = players
         localStorage.setItem('teams', JSON.stringify(teams))
         
-        let playersSelected: any[] = JSON.parse(localStorage.getItem('playersSelected'))
-        playersSelected = playersSelected ? playersSelected : []
+        const playersSelected: any[] = JSON.parse(localStorage.getItem('playersSelected'))
         playersSelected.push(player.name)
         localStorage.setItem('playersSelected', JSON.stringify(playersSelected))
 
