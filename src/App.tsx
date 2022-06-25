@@ -15,15 +15,16 @@ export default function App() {
 
   return (
     <Container>
-      {
+      { 
         teams_.map((team, index) => {
-          return (
-            <Team 
-              key={'team-' + index}
-              shield={team.image}
-              players={team.players}
-            />
-          )
+          if (localStorage.getItem('teams'))
+            return (
+              <Team 
+                key={'team-' + index}
+                name={team.name}
+                shield={team.image}
+              />
+            )
         })
       }
     </Container>
