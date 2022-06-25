@@ -1,16 +1,20 @@
 import {Container} from 'react-bootstrap';
 import './assets/css/style.css'
+import { teams } from './assets/data';
 import { Team } from './components';
 
 export default function App() { 
-  const numberOfTeams = 12
 
   return (
     <Container>
       {
-        Array.from(Array(numberOfTeams).keys()).map((item, index) => {
+        teams.map((team, index) => {
           return (
-            <Team key={'team-' + index}/>
+            <Team 
+              key={'team-' + index}
+              shield={team.image}
+              players={team.players}
+            />
           )
         })
       }
