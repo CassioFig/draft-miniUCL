@@ -11,3 +11,36 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.player-image:hover {
+    cursor: pointer;
+    height: 115px;
+}
+
+.player-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+    padding: 10px;
+}
+
+.player-option:hover {
+    cursor: pointer;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+}
+
+.player-option p {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+}
+
+.player-image-option {
+    border-radius: 5px;
+}
