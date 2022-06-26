@@ -16,7 +16,8 @@ export default function Team({ name, shield }: Props) {
 
     useEffect(() => {
         const teams: ITeams[] = JSON.parse(localStorage.getItem('teams'))
-        setPlayers(teams.find(team => team.name === name).players)
+        const players_: IPlayer[] = teams.find(team => team.name === name).players
+        setPlayers(players_)
     }, [])
 
     const openPlayersList = () => setShowPlayersList(true)
@@ -37,6 +38,19 @@ export default function Team({ name, shield }: Props) {
         closePlayersList()
     }
 
+    const removePlayer = (player: IPlayer) => {
+        const players_ = players.filter((player_) => player_.name !== player.name)
+        setPlayers(players_)
+
+        const teams: ITeams[] = JSON.parse(localStorage.getItem('teams'))
+        teams.find(team => team.name === name).players = players_
+        localStorage.setItem('teams', JSON.stringify(teams))
+
+        let playersSelected: any[] = JSON.parse(localStorage.getItem('playersSelected'))
+        playersSelected = playersSelected.filter(player_ => player_ !== player.name)
+        localStorage.setItem('playersSelected', JSON.stringify(playersSelected))
+    }
+
     return (
         <div className='team'>
             <Row>
@@ -51,6 +65,7 @@ export default function Team({ name, shield }: Props) {
                                     height={110}
                                     className='player-image'
                                     src={player.image}
+                                    onClick={() => removePlayer(player)}
                                 />
                             </Col>
                         )
