@@ -44,3 +44,11 @@ body {
 .player-image-option {
     border-radius: 5px;
 }
+
+.team-image {
+    border-radius: 5px 0 0 5px
+}
+
+.col:last-child img {
+    border-radius: 0 5px 5px 0
+}

@@ -54,7 +54,7 @@ export default function Team({ name, shield }: Props) {
     return (
         <div className='team'>
             <Row>
-                <Col><Image src={shield} width={110} height={110}/></Col>
+                <Col><Image src={shield} width={110} height={110} className='team-image'/></Col>
 
                 { players &&
                     players.map((player, index) => {
