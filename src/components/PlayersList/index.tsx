@@ -39,23 +39,26 @@ export default function PlayersList({ show, close, addPlayer }: Props) {
 										<Container>
 											{
 												getPlayersByClass(class_.class).map((player, index) => {
-													return (
-														<Row 
-															className="player-option" 
-															key={'player-option-' + index}
-															onClick={() => addPlayer(player)}
-														>
-															<Col md={4}>
-																<Image
-																	src={player.image}
-																	width={70}
-																	height={70}
-																	className='player-image-option'
-																/>
-															</Col>
-															<Col md={8}><p>{player.name}</p></Col>
-														</Row>
-													)
+													const playersSelected: string[] = JSON.parse(localStorage.getItem('playersSelected'))
+													if (!playersSelected.includes(player.name)) {
+														return (
+															<Row 
+																className="player-option" 
+																key={'player-option-' + index}
+																onClick={() => addPlayer(player)}
+															>
+																<Col md={4}>
+																	<Image
+																		src={player.image}
+																		width={70}
+																		height={70}
+																		className='player-image-option'
+																	/>
+																</Col>
+																<Col md={8}><p>{player.name}</p></Col>
+															</Row>
+														)
+													}
 												})
 											}
 										</Container>
