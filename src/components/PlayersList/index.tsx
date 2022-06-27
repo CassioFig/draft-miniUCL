@@ -1,13 +1,26 @@
+import { useEffect, useState } from "react";
 import { Accordion, Col, Container, Image, Modal, Row } from "react-bootstrap";
-import { classes, IClassTypes, players } from "../../assets/data";
+import { classes, IClassTypes, IPlayer, players } from "../../assets/data";
 
 type Props = {
 	show: boolean
 	close: any
 	addPlayer: any
+	teamName: string
 }
 
-export default function PlayersList({ show, close, addPlayer }: Props) {
+export default function PlayersList({ show, close, addPlayer, teamName }: Props) {
+	const [selectedClasses, setSelectedClasses] = useState([])
+
+	useEffect(() => {
+		const players_: IPlayer[] = JSON.parse(localStorage.getItem('teams')).find(team => team.name === teamName).players
+		
+		let selectedClassesAux = []
+		for (const player of players_) {
+			selectedClassesAux.push(player.class)
+		}
+		setSelectedClasses(selectedClassesAux)
+	}, [show])
 
 	const getPlayersByClass = (class_: IClassTypes) => {
 		return players.filter((player) => {
@@ -31,6 +44,7 @@ export default function PlayersList({ show, close, addPlayer }: Props) {
 
 					{
 						classes.map((class_, index) => {
+							if (!selectedClasses.includes(class_.class))
 							return (
 								<Accordion.Item eventKey={`${index}`} key={'accordion-' + index}>
 									<Accordion.Header>{class_.name}</Accordion.Header>

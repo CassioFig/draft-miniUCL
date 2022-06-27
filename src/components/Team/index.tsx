@@ -92,6 +92,7 @@ export default function Team({ name, shield }: Props) {
                 show={showPlayersList} 
                 close={closePlayersList}
                 addPlayer={addPlayer}
+                teamName={name}
             />
         </div>
     )
