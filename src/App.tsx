@@ -25,6 +25,8 @@ export default function App() {
                 key={'team-' + index}
                 name={team.name}
                 shield={team.image}
+                height={team.height}
+                width={team.width}
               />
             )
         })

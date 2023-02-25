@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Accordion, Col, Container, Image, Modal, Row } from "react-bootstrap";
-import { classes, IClassTypes, IPlayer, players } from "../../assets/data";
+import { classes, IClassTypes, IPlayer, playersA } from "../../assets/data";
 
 type Props = {
 	show: boolean
@@ -23,7 +23,7 @@ export default function PlayersList({ show, close, addPlayer, teamName }: Props)
 	}, [show])
 
 	const getPlayersByClass = (class_: IClassTypes) => {
-		return players.filter((player) => {
+		return playersA.filter((player) => {
 			return player.class === class_
 		})
 	}

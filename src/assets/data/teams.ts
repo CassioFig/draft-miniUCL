@@ -1,71 +1,96 @@
-import BrazilShield from '../images/escudo-brasil-teste.jpeg'
 import { IPlayer } from './players'
 
 export type ITeams = {
-    name: string,
-    image: string,
-    players: IPlayer[]
+    name    : string,
+    image   : string,
+    players : IPlayer[],
+    width?  : number,
+    height? : number,
 }
 
 export const teams: ITeams[] = [
     {
-        name: 'Brasil',
-        image: BrazilShield,
-        players: []
+        name: 'City',
+        image: require('../images/times-a/kisspng-manchester-city-f-c-organization-brand-clip-art-5bf2d15e4c4e55.1024146415426399663126.png'),
+        players: [],
+        width: 110,
+        height: 110,
     },
     {
-        name: 'Alemanha',
-        image: BrazilShield,
-        players: []
+        name: 'Arsenal',
+        image: require('../images/times-a/Arsenal-logo-escudo-shield-2.png'),
+        players: [],
+        width: 100,
+        height: 110
     },
     {
-        name: 'China',
-        image: BrazilShield,
-        players: []
+        name: 'New Castle',
+        image: require('../images/times-a/newcastle-united-logo.png'),
+        players: [],
+        width: 110,
+        height: 110
     },
     {
-        name: 'Argentina',
-        image: BrazilShield,
-        players: []
+        name: 'United',
+        image: require('../images/times-a/kisspng-manchester-united-f-c-logo-encapsulated-postscrip-united-vector-5adcea22434ec9.2689607715244272982757.png'),
+        players: [],
+        width: 100,
+        height: 90
     },
     {
-        name: 'Italia',
-        image: BrazilShield,
-        players: []
+        name: 'Tottenham',
+        image: require('../images/times-a/tottenham-logo-escudo-2.png'),
+        players: [],
+        width: 50,
+        height: 100
     },
     {
-        name: 'Holanda',
-        image: BrazilShield,
-        players: []
+        name: 'Liverpool',
+        image: require('../images/times-a/liverpool-fc-logo-escudo-2.png'),
+        players: [],
+        width: 90,
+        height: 100
     },
     {
-        name: 'Espanha',
-        image: BrazilShield,
-        players: []
+        name: 'Chelsea',
+        image: require('../images/times-a/chelsea-fc-logo-2.png'),
+        players: [],
+        width: 100,
+        height: 100
     },
     {
-        name: 'Belgica',
-        image: BrazilShield,
-        players: []
+        name: 'Leicester',
+        image: require('../images/times-a/leicester-city-logo-3.png'),
+        players: [],
+        width: 100,
+        height: 100
     },
     {
-        name: 'Inglaterra',
-        image: BrazilShield,
-        players: []
+        name: 'Aston Villa ',
+        image: require('../images/times-a/aston-villa-logo-2.png'),
+        players: [],
+        width: 90,
+        height: 100
     },
     {
-        name: 'França',
-        image: BrazilShield,
-        players: []
+        name: 'Fulham',
+        image: require('../images/times-a/fulham-fc-logo-2.png'),
+        players: [],
+        width: 100,
+        height: 100
     },
     {
-        name: 'Croâcia',
-        image: BrazilShield,
-        players: []
+        name: 'West ham',
+        image: require('../images/times-a/west-ham-united-logo-3.png'),
+        players: [],
+        width: 90,
+        height: 100
     },
     {
-        name: 'Chile',
-        image: BrazilShield,
-        players: []
+        name: 'Wolves',
+        image: require('../images/times-a/wolverhampton-logo-escudo-1.png'),
+        players: [],
+        width: 90,
+        height: 100
     },
 ]

@@ -1,4 +1,4 @@
-export type IClassTypes = 'G' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | '11' | '12' 
+export type IClassTypes = 'G' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
 
 export type IClass = {
     name: string
@@ -16,6 +16,4 @@ export const classes: IClass[] = [
     { name: 'Pote 7', class: '7' },
     { name: 'Pote 8', class: '8' },
     { name: 'Pote 9', class: '9' },
-    { name: 'Pote 10', class: '10' },
-    { name: 'Pote 11', class: '11' }
 ]

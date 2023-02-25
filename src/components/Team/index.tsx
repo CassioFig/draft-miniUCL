@@ -5,11 +5,13 @@ import PlayersList from '../PlayersList';
 import { useEffect, useState } from 'react';
 
 type Props = {
-    shield: string
-    name: string
+    shield  : string
+    name    : string
+    width   : number;
+    height  : number;
 }
 
-export default function Team({ name, shield }: Props) {
+export default function Team({ name, shield, height, width}: Props) {
     const [players, setPlayers] = useState([])
     const [showPlayersList, setShowPlayersList] = useState(false)
     const numberOfPlayers = 11
@@ -54,19 +56,25 @@ export default function Team({ name, shield }: Props) {
     return (
         <div className='team'>
             <Row>
-                <Col><Image src={shield} width={110} height={110} className='team-image'/></Col>
+                <Col><Image src={shield} width={width} height={height} className='team-image'/></Col>
 
                 { players &&
                     players.map((player, index) => {
                         return (
                             <Col key={'player-' + index}>
-                                <Image
+                                <div 
+                                    className='player-name'
+                                    onClick={() => removePlayer(player)}
+                                >
+                                        { player.name }
+                                </div>
+                                {/* <Image
                                     width={110}
                                     height={110}
                                     className='player-image'
                                     src={player.image}
                                     onClick={() => removePlayer(player)}
-                                />
+                                /> */}
                             </Col>
                         )
                     })
