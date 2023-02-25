@@ -673,7 +673,7 @@ export const playersB: IPlayer[] = [
         image: require('../images/player-default.png')
     },
     {
-        name: 'João Felipe Rodrigues',
+        name: 'Breno Leal',
         class: '4',
         image: require('../images/player-default.png')
     },
