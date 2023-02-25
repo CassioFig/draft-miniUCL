@@ -62,19 +62,26 @@ export default function Team({ name, shield, height, width}: Props) {
                     players.map((player, index) => {
                         return (
                             <Col key={'player-' + index}>
-                                <div 
-                                    className='player-name'
-                                    onClick={() => removePlayer(player)}
-                                >
-                                        { player.name }
-                                </div>
-                                {/* <Image
-                                    width={110}
-                                    height={110}
-                                    className='player-image'
-                                    src={player.image}
-                                    onClick={() => removePlayer(player)}
-                                /> */}
+                                {
+                                    player.image.includes('player-default') ? (
+                                        <div 
+                                            className='player-name'
+                                            onClick={() => removePlayer(player)}
+                                        >
+                                                { player.name }
+                                        </div>
+                                    ) :
+                                    (
+                                        <Image
+                                            width={110}
+                                            height={110}
+                                            className='player-image'
+                                            src={player.image}
+                                            onClick={() => removePlayer(player)}
+                                        />
+                                    )
+                                }
+                                
                             </Col>
                         )
                     })
