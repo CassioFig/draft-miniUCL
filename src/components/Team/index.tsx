@@ -14,7 +14,7 @@ type Props = {
 export default function Team({ name, shield, height, width}: Props) {
     const [players, setPlayers] = useState([])
     const [showPlayersList, setShowPlayersList] = useState(false)
-    const numberOfPlayers = 11
+    const numberOfPlayers = 10
 
     useEffect(() => {
         const teams: ITeams[] = JSON.parse(localStorage.getItem('teams'))

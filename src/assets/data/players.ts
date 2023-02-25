@@ -4,6 +4,68 @@ export type IPlayer = {
     image: string
 }
 
+export const goleiros: IPlayer[] = [
+    {
+        class: 'G',
+        name: 'Isaac',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Neto',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Barreto',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Rerysson',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Vascão',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Cássio',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Guga',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Thauan',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Whintney ',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Pedrinho',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Pedro Batalha',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Antônio Marcos',
+        image: require('../images/player-default.png')
+    },
+]
 export const playersA: IPlayer[] = [
     {
         "name": "Batinga 1 ",
@@ -122,7 +184,7 @@ export const playersA: IPlayer[] = [
     },
     {
         "name": "Lisboa ",
-        "class": "2",
+        "class": "3",
         "image": require("../images/player-default.png")
     },
     {
@@ -132,7 +194,7 @@ export const playersA: IPlayer[] = [
     },
     {
         "name": "Manoel Neto ",
-        "class": "3",
+        "class": "2",
         "image": require("../images/player-default.png")
     },
     {
@@ -545,4 +607,4 @@ export const playersA: IPlayer[] = [
         "class": "9",
         "image": require("../images/player-default.png")
     }
-]
+].concat(goleiros)
