@@ -135,7 +135,7 @@ export const playersA: IPlayer[] = [
     {
         "name": "Saulo Braz ",
         "class": "2",
-        image: require('../images/jogadores-a/Robertinho.jpg')
+        image: require('../images/jogadores-a/Saulo Braz.jpg')
     },
     {
         "name": "Severino ",
