@@ -85,7 +85,7 @@ export default function Team({ name, shield, height, width}: Props) {
                             <Col key={'playerDefault-' + index}>
                                 <Image 
                                     src={PlayerDefault} 
-                                    width={110} 
+                                    width={120} 
                                     height={110} 
                                     className='player-image'
                                     onClick={openPlayersList}
