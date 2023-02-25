@@ -12,7 +12,7 @@ export const goleiros: IPlayer[] = [
     },
     {
         class: 'G',
-        name: 'Raimundo Matheus',
+        name: 'Pick Livre Goleiro',
         image: require('../images/player-default.png')
     },
     {
@@ -27,7 +27,7 @@ export const goleiros: IPlayer[] = [
     },
     {
         class: 'G',
-        name: 'Carlos Vinícius',
+        name: 'Pick Livre Goleiro',
         image: require('../images/player-default.png')
     },
     {
