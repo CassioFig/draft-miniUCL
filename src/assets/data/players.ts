@@ -7,64 +7,35 @@ export type IPlayer = {
 export const goleiros: IPlayer[] = [
     {
         class: 'G',
-        name: 'Isaac',
-        image: require('../images/jogadores-a/Isaac.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Neto',
-        image: require('../images/jogadores-a/Neto.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Barreto',
-        image: require('../images/jogadores-a/Barreto.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Rerysson',
-        image: require('../images/jogadores-a/Rerysson.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Vascão',
-        image: require('../images/jogadores-a/Vascão.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Cássio',
-        image: require('../images/jogadores-a/Cássio.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Guga',
-        image: require('../images/jogadores-a/Guga.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Thauan',
-        image: require('../images/jogadores-a/Thauan.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Whintney ',
-        image: require('../images/jogadores-a/Whintney.jpg')
-    },
-    {
-        class: 'G',
-        name: 'Pedrinho',
+        name: 'João Gabriel',
         image: require('../images/player-default.png')
     },
     {
         class: 'G',
-        name: 'Pedro Batalha',
-        image: require('../images/jogadores-a/Pedro Batalha.jpg')
+        name: 'Raimundo Matheus',
+        image: require('../images/player-default.png')
     },
     {
         class: 'G',
-        name: 'Antônio Marcos',
-        image: require('../images/jogadores-a/Antônio Marcos.jpg')
+        name: 'Joshua',
+        image: require('../images/player-default.png')
     },
+    {
+        class: 'G',
+        name: 'Miguel Ângelo',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Carlos Vinícius',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Igor Eneas',
+        image: require('../images/player-default.png')
+    },
+    
 ]
 export const playersA: IPlayer[] = [
     {
@@ -607,4 +578,273 @@ export const playersA: IPlayer[] = [
         "class": "9",
         image: require('../images/jogadores-a/DGO.jpg')
     }
+].concat(goleiros);
+
+
+export const playersB: IPlayer[] = [
+    {
+        name: 'Bida',
+        class: '1',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Adrian Gabriel',
+        class: '1',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Brenno Vieira',
+        class: '1',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Arthur Elias',
+        class: '1',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Pedro Igor',
+        class: '1',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Anthony Rossi',
+        class: '1',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Júlio César',
+        class: '2',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Roger de Paula',
+        class: '2',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Pedro Antony',
+        class: '2',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Rudison',
+        class: '2',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Jonathas Rocha',
+        class: '2',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Phelipe Khayan',
+        class: '2',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Pedro Brandão',
+        class: '3',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Daniel Ramires',
+        class: '3',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Paulo Roberto',
+        class: '3',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Felipe Lima',
+        class: '3',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Khristian Souza',
+        class: '3',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'João Felipe Rodrigues',
+        class: '4',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Bruno Duda',
+        class: '4',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Ciro Daniel Rabelo',
+        class: '4',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Maxsuel',
+        class: '4',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Adrian Ribeiro',
+        class: '4',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Hilbert Daniel',
+        class: '4',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Ítalo Jullian',
+        class: '5',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Felipe Yan',
+        class: '5',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Edson Carlos Gomes',
+        class: '5',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Marcus Vinícius',
+        class: '5',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Thiago Gois Cruz',
+        class: '5',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Marcos Santos Silva',
+        class: '5',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Matheus Lima',
+        class: '6',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Brasilino Vinicius',
+        class: '6',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Christian Moura Silva',
+        class: '6',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Denis Thomas',
+        class: '6',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Victor Ricardo',
+        class: '6',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Jorge Alfredo',
+        class: '6',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Frederico',
+        class: '7',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Juninho',
+        class: '7',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'João Victor Cardoso',
+        class: '7',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Ítalo Gabriel',
+        class: '7',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Lucas Oliveira',
+        class: '7',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Luan Silva',
+        class: '7',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Hermesson Jr.',
+        class: '8',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Paulo Victor',
+        class: '8',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Márcio',
+        class: '8',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Lucas Andrade',
+        class: '8',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Winicius',
+        class: '8',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Breno Miel',
+        class: '8',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Dj Heinrick',
+        class: '9',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'João Raposo',
+        class: '9',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'André Lucas',
+        class: '9',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Valfran',
+        class: '9',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Vanderlei',
+        class: '9',
+        image: require('../images/player-default.png')
+    },
+    {
+        name: 'Adriano Lima',
+        class: '9',
+        image: require('../images/player-default.png')
+    },
 ].concat(goleiros);

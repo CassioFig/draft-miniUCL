@@ -10,87 +10,46 @@ export type ITeams = {
 
 export const teams: ITeams[] = [
     {
-        name: 'City',
-        image: require('../images/times-a/kisspng-manchester-city-f-c-organization-brand-clip-art-5bf2d15e4c4e55.1024146415426399663126.png'),
+        name: 'Forest',
+        image: require('../images/times-b/kisspng-nottingham-forest-f-c-nottingham-forest-tickets-r-5bfe2b0450efc3.6931177315433838123315.png'),
         players: [],
         width: 110,
         height: 110,
     },
     {
-        name: 'Arsenal',
-        image: require('../images/times-a/Arsenal-logo-escudo-shield-2.png'),
+        name: 'Everton',
+        image: require('../images/times-b/everton-logo-escudo-3.png'),
         players: [],
         width: 100,
         height: 110
     },
     {
-        name: 'New Castle',
-        image: require('../images/times-a/newcastle-united-logo.png'),
+        name: 'Leeds',
+        image: require('../images/times-b/leeds-united-fc-logo-3.png'),
         players: [],
         width: 110,
         height: 110
     },
     {
-        name: 'United',
-        image: require('../images/times-a/kisspng-manchester-united-f-c-logo-encapsulated-postscrip-united-vector-5adcea22434ec9.2689607715244272982757.png'),
+        name: 'Crystal Palace',
+        image: require('../images/times-b/crystal-palace-logo-3.png'),
         players: [],
         width: 100,
         height: 90
     },
     {
-        name: 'Tottenham',
-        image: require('../images/times-a/tottenham-logo-escudo-2.png'),
-        players: [],
-        width: 50,
-        height: 100
-    },
-    {
-        name: 'Liverpool',
-        image: require('../images/times-a/liverpool-fc-logo-escudo-2.png'),
-        players: [],
-        width: 90,
-        height: 100
-    },
-    {
-        name: 'Chelsea',
-        image: require('../images/times-a/chelsea-fc-logo-2.png'),
+        name: 'Bournemouth',
+        image: require('../images/times-b/bournemouth-fc-logo-2.png'),
         players: [],
         width: 100,
-        height: 100
+        height: 90
     },
     {
-        name: 'Leicester',
-        image: require('../images/times-a/leicester-city-logo-3.png'),
+        name: 'Brighton',
+        image: require('../images/times-b/brighton-hove-albion-logo-2.png'),
         players: [],
         width: 100,
-        height: 100
+        height: 90
     },
-    {
-        name: 'Aston Villa ',
-        image: require('../images/times-a/aston-villa-logo-2.png'),
-        players: [],
-        width: 90,
-        height: 100
-    },
-    {
-        name: 'Fulham',
-        image: require('../images/times-a/fulham-fc-logo-2.png'),
-        players: [],
-        width: 100,
-        height: 100
-    },
-    {
-        name: 'West ham',
-        image: require('../images/times-a/west-ham-united-logo-3.png'),
-        players: [],
-        width: 90,
-        height: 100
-    },
-    {
-        name: 'Wolves',
-        image: require('../images/times-a/wolverhampton-logo-escudo-1.png'),
-        players: [],
-        width: 90,
-        height: 100
-    },
+ 
 ]
