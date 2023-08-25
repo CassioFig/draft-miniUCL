@@ -17,8 +17,8 @@ export const goleiros: IPlayer[] = [
     },
     {
         class: 'G',
-        name: 'Barreto',
-        image: require('../images/jogadores-a/Barreto.jpg')
+        name: 'Josh',
+        image: require('../images/jogadores-a/Josh.jpg')
     },
     {
         class: 'G',
@@ -27,13 +27,13 @@ export const goleiros: IPlayer[] = [
     },
     {
         class: 'G',
-        name: 'Vascão',
-        image: require('../images/jogadores-a/Vascão.jpg')
+        name: 'Paulinho',
+        image: require('../images/jogadores-a/Paulinho.jpg')
     },
     {
         class: 'G',
-        name: 'Cássio',
-        image: require('../images/jogadores-a/Cássio.jpg')
+        name: 'Igor Eneas',
+        image: require('../images/jogadores-a/Igor_Eneas.jpg')
     },
     {
         class: 'G',
@@ -52,8 +52,8 @@ export const goleiros: IPlayer[] = [
     },
     {
         class: 'G',
-        name: 'Pedrinho',
-        image: require('../images/player-default.png')
+        name: 'Matheus Teles',
+        image: require('../images/jogadores-a/Matheus_Teles.jpg')
     },
     {
         class: 'G',
@@ -62,8 +62,8 @@ export const goleiros: IPlayer[] = [
     },
     {
         class: 'G',
-        name: 'Antônio Marcos',
-        image: require('../images/jogadores-a/Antônio Marcos.jpg')
+        name: 'Vinicius Bitencourt',
+        image: require('../images/jogadores-a/Vinicius_Bitencourt.jpg')
     },
 ]
 export const playersA: IPlayer[] = [
