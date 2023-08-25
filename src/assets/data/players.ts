@@ -40,6 +40,31 @@ export const goleiros: IPlayer[] = [
         name: 'Marcos Paulo',
         image: require('../images/player-default.png')
     },
+    {
+        class: 'G',
+        name: 'Pick Livre',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Pick Livre',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Pick Livre',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Pick Livre',
+        image: require('../images/player-default.png')
+    },
+    {
+        class: 'G',
+        name: 'Pick Livre',
+        image: require('../images/player-default.png')
+    },
     
 ]
 export const playersA: IPlayer[] = [
