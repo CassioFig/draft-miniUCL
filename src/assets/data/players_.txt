@@ -1,0 +1,541 @@
+{
+            name: "Chokito",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Rodrigo Batinga",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Gabriel Santiago",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Giovanni",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Alysson",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Mayam",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Valdívia",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Ouro",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Sávio",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Luis Eduardo",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Marcos Jr.",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Severino",
+            class: "1",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Victor Lucas",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Arthur Graças",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Miguel",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Rafael Batinga",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Nando",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Pedro Antony",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Yuri Dorea",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Guti",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Toninho",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Glaubert",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Saulo Braz",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Breno Correia",
+            class: "2",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Nikito",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Mirage",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Manoel Neto",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Antonio Lima",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Manaus",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Lisboa",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Bruninho",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Alex",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Edvan Carlos",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Manoel",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Fróes",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Vitinho",
+            class: "3",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Luiz",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Daniel Ramirez",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Wiltinho",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Pedro Igor",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Hilbert",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "João",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Gustavo Augusto",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Julio Torquato",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Peu",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Leozito",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Vinicius",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Caio Henrich",
+            class: "4",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Magu",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Bob",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Robert Yan",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Albertinho",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Danilo Ricardo",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Samuca",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Breno Miel",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Breno Castro",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "João Victor",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Matheus",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Noberto",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Ciro Daniel",
+            class: "5",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Christian Moura",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "André",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Anthony",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Nicolas",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Saulo",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Felipe Medeiros",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Batedeira",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Roger",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Pedro W",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Breno Lira",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Marquinhos",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Flavio Henrique",
+            class: "6",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Franco",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Juninho",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Anão",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Yuri Oliveira",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Goldophim",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Guilherme Augusto",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Luis Felipe",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Romualdo",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Pedrinho",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Rabelo",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "JP",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Neto Teles",
+            class: "7",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Valfran",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Yuri",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Italo J.",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Benjamim",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Clelio",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Empas",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Cazuza",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Gualter",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "João Marcos",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Rafael ",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Leite",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Pamponet",
+            class: "8",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Barreto",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Lucas Araujo",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Hélio",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Bruno Raika",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Tom",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Fusion",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "André Lucas",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Arthur W.",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Arthur P.",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Vitor Vaz",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Farbs",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        {
+            name: "Mariano",
+            class: "9",
+            image: require('../images/player-default.png')
+        },
+        
