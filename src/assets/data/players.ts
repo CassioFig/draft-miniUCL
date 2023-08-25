@@ -458,9 +458,9 @@ export const playersA: IPlayer[] = [
         image: require('../images/jogadores-a/Guilherme Augusto.jpg')
     },
     {
-        name: "Luis Felipe",
+        name: "Rafael Alex",
         class: "7",
-        image: require('../images/jogadores-a/Luis F.jpg')
+        image: require('../images/player-default.png')
     },
     {
         name: "Romualdo",
