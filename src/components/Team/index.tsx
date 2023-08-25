@@ -14,7 +14,7 @@ type Props = {
 export default function Team({ name, shield, height, width}: Props) {
     const [players, setPlayers] = useState([])
     const [showPlayersList, setShowPlayersList] = useState(false)
-    const numberOfPlayers = 11
+    const numberOfPlayers = 10
 
     useEffect(() => {
         const teams: ITeams[] = JSON.parse(localStorage.getItem('teams'))
@@ -62,19 +62,26 @@ export default function Team({ name, shield, height, width}: Props) {
                     players.map((player, index) => {
                         return (
                             <Col key={'player-' + index}>
-                                <div 
-                                    className='player-name'
-                                    onClick={() => removePlayer(player)}
-                                >
-                                        { player.name }
-                                </div>
-                                {/* <Image
-                                    width={110}
-                                    height={110}
-                                    className='player-image'
-                                    src={player.image}
-                                    onClick={() => removePlayer(player)}
-                                /> */}
+                                {
+                                    player.image.includes('player-default') ? (
+                                        <div 
+                                            className='player-name'
+                                            onClick={() => removePlayer(player)}
+                                        >
+                                                { player.name }
+                                        </div>
+                                    ) :
+                                    (
+                                        <Image
+                                            width={110}
+                                            height={110}
+                                            className='player-image'
+                                            src={player.image}
+                                            onClick={() => removePlayer(player)}
+                                        />
+                                    )
+                                }
+                                
                             </Col>
                         )
                     })
@@ -85,7 +92,7 @@ export default function Team({ name, shield, height, width}: Props) {
                             <Col key={'playerDefault-' + index}>
                                 <Image 
                                     src={PlayerDefault} 
-                                    width={110} 
+                                    width={120} 
                                     height={110} 
                                     className='player-image'
                                     onClick={openPlayersList}
