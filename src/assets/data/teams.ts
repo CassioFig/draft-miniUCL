@@ -17,80 +17,80 @@ export const teams: ITeams[] = [
         height: 110,
     },
     {
-        name: 'Arsenal',
-        image: require('../images/times-a/Arsenal-logo-escudo-shield-2.png'),
-        players: [],
-        width: 100,
-        height: 110
-    },
-    {
-        name: 'New Castle',
-        image: require('../images/times-a/newcastle-united-logo.png'),
+        name: 'Real',
+        image: require('../images/times-a/logo-real-madrid-escudo-2048.png'),
         players: [],
         width: 110,
         height: 110
     },
     {
-        name: 'United',
-        image: require('../images/times-a/kisspng-manchester-united-f-c-logo-encapsulated-postscrip-united-vector-5adcea22434ec9.2689607715244272982757.png'),
+        name: 'Barça',
+        image: require('../images/times-a/logo-barcelona-1536.png'),
         players: [],
-        width: 100,
-        height: 90
+        width: 110,
+        height: 110
     },
     {
-        name: 'Tottenham',
-        image: require('../images/times-a/tottenham-logo-escudo-2.png'),
+        name: 'PSG',
+        image: require('../images/times-a/paris-saint-germain-2048.png'),
         players: [],
-        width: 50,
+        width: 110,
+        height: 110
+    },
+    {
+        name: 'Bayern',
+        image: require('../images/times-a/bayern-munchen-2048.png'),
+        players: [],
+        width: 100,
         height: 100
     },
     {
         name: 'Liverpool',
         image: require('../images/times-a/liverpool-fc-logo-escudo-2.png'),
         players: [],
-        width: 90,
-        height: 100
+        width: 100,
+        height: 110
     },
     {
-        name: 'Chelsea',
-        image: require('../images/times-a/chelsea-fc-logo-2.png'),
+        name: 'Benfica',
+        image: require('../images/times-a/logo-benfica-1.png'),
         players: [],
         width: 100,
         height: 100
     },
     {
-        name: 'Leicester',
-        image: require('../images/times-a/leicester-city-logo-3.png'),
+        name: 'Napoli',
+        image: require('../images/times-a/societa-sportiva-calcio-napoli-2048.png'),
         players: [],
         width: 100,
         height: 100
     },
     {
-        name: 'Aston Villa ',
-        image: require('../images/times-a/aston-villa-logo-2.png'),
-        players: [],
-        width: 90,
-        height: 100
-    },
-    {
-        name: 'Fulham',
-        image: require('../images/times-a/fulham-fc-logo-2.png'),
+        name: 'Milan',
+        image: require('../images/times-a/associazione-calcio-milan-2048.png'),
         players: [],
         width: 100,
         height: 100
     },
     {
-        name: 'West ham',
-        image: require('../images/times-a/west-ham-united-logo-3.png'),
+        name: 'Inter',
+        image: require('../images/times-a/football-club-internazionale-milano-2048.png'),
         players: [],
-        width: 90,
+        width: 100,
         height: 100
     },
     {
-        name: 'Wolves',
-        image: require('../images/times-a/wolverhampton-logo-escudo-1.png'),
+        name: 'Atletico',
+        image: require('../images/times-a/logo-atletico-madrid-2048.png'),
         players: [],
-        width: 90,
+        width: 100,
+        height: 100
+    },
+    {
+        name: 'Ajax',
+        image: require('../images/times-a/logo-ajax-1.png'),
+        players: [],
+        width: 100,
         height: 100
     },
 ]
