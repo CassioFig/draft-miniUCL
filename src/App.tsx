@@ -9,6 +9,9 @@ export default function App() {
 
   useEffect(() => {
     const teamsExist = localStorage.getItem('teams')
+
+    if (teamsExist && JSON.parse(localStorage.getItem('teams'))[1].name !== 'United') localStorage.clear()
+
     if (!teamsExist) localStorage.setItem('teams', JSON.stringify(teams))
     else setTeams(JSON.parse(localStorage.getItem('teams')))
 
