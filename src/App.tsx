@@ -1,34 +1,37 @@
-import { useEffect, useState } from 'react';
-import {Container} from 'react-bootstrap';
+import { useContext } from 'react';
+import {Container, Form} from 'react-bootstrap';
 import './assets/css/style.css'
-import { teams } from './assets/data';
 import { Team } from './components';
+import { TeamsContext } from './context/teams-context';
+import { ChampContext } from './context/champ-context';
+import { Champ } from './enum';
 
 export default function App() { 
-  const [teams_, setTeams] = useState(teams)
-
-  useEffect(() => {
-    const teamsExist = localStorage.getItem('teams')
-    if (!teamsExist) localStorage.setItem('teams', JSON.stringify(teams))
-    else setTeams(JSON.parse(localStorage.getItem('teams')))
-
-    if (!teamsExist) localStorage.setItem('playersSelected', JSON.stringify([]))
-  }, [])
+  const { teams } = useContext(TeamsContext)
+  const { handleChangeChamp, champ } = useContext(ChampContext)
 
   return (
     <Container>
+      <br />
+      <Form.Select 
+        value={champ}
+        onChange={e => handleChangeChamp(e.target.value as Champ)}
+      >
+        <option value={Champ.A}>Série A</option>
+        <option value={Champ.B}>Série B</option>
+      </Form.Select>
+      <br />
       { 
-        teams_.map((team, index) => {
-          if (localStorage.getItem('teams'))
-            return (
-              <Team 
-                key={'team-' + index}
-                name={team.name}
-                shield={team.image}
-                height={team.height}
-                width={team.width}
-              />
-            )
+        !!teams.length && teams.map((team, index) => {
+          return (
+            <Team 
+              key={'team-' + index}
+              name={team.name}
+              shield={team.image}
+              height={team.height}
+              width={team.width}
+            />
+          )
         })
       }
     </Container>

@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Accordion, Col, Container, Image, Modal, Row } from "react-bootstrap";
-import { classes, IClassTypes, IPlayer, playersA } from "../../assets/data";
+import { classes, IClassTypes, IPlayer } from "../../assets/data";
+import { TeamsContext } from "../../context/teams-context";
+import { PlayersContext } from "../../context/players-context";
 
 type Props = {
 	show: boolean
@@ -10,10 +12,12 @@ type Props = {
 }
 
 export default function PlayersList({ show, close, addPlayer, teamName }: Props) {
+	const { teams } = useContext(TeamsContext);
+	const { players, selectedPlayers } = useContext(PlayersContext);
 	const [selectedClasses, setSelectedClasses] = useState([])
 
 	useEffect(() => {
-		const players_: IPlayer[] = JSON.parse(localStorage.getItem('teams')).find(team => team.name === teamName).players
+		const players_: IPlayer[] = teams.find(team => team.name === teamName).players
 		
 		let selectedClassesAux = []
 		for (const player of players_) {
@@ -22,8 +26,8 @@ export default function PlayersList({ show, close, addPlayer, teamName }: Props)
 		setSelectedClasses(selectedClassesAux)
 	}, [show])
 
-	const getPlayersByClass = (class_: IClassTypes) => {
-		return playersA.filter((player) => {
+	const getPlayersByClass = (class_: IClassTypes): IPlayer[] => {
+		return players.filter((player) => {
 			return player.class === class_
 		})
 	}
@@ -53,26 +57,24 @@ export default function PlayersList({ show, close, addPlayer, teamName }: Props)
 										<Container>
 											{
 												getPlayersByClass(class_.class).map((player, index) => {
-													const playersSelected: string[] = JSON.parse(localStorage.getItem('playersSelected'))
-													if (!playersSelected.includes(player.name)) {
-														return (
-															<Row 
-																className="player-option" 
-																key={'player-option-' + index}
-																onClick={() => addPlayer(player)}
-															>
-																<Col md={4}>
-																	<Image
-																		src={player.image}
-																		width={70}
-																		height={70}
-																		className='player-image-option'
-																	/>
-																</Col>
-																<Col md={8}><p>{player.name}</p></Col>
-															</Row>
-														)
-													}
+													if (!selectedPlayers.includes(player.name))
+													return (
+														<Row 
+															className="player-option" 
+															key={'player-option-' + index}
+															onClick={() => addPlayer(player)}
+														>
+															<Col md={4}>
+																<Image
+																	src={player.image}
+																	width={70}
+																	height={70}
+																	className='player-image-option'
+																/>
+															</Col>
+															<Col md={8}><p>{player.name.replace('sf-', '')}</p></Col>
+														</Row>
+													)
 												})
 											}
 										</Container>
