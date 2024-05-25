@@ -10,15 +10,15 @@ export type ITeams = {
 
 export const teams: ITeams[] = [
     {
-        name: 'City',
-        image: require('../images/times-a/kisspng-manchester-city-f-c-organization-brand-clip-art-5bf2d15e4c4e55.1024146415426399663126.png'),
+        name: 'Flamengo',
+        image: require('../images/times-a/flamengo-15.png'),
         players: [],
         width: 110,
         height: 110,
     },
     {
-        name: 'Arsenal',
-        image: require('../images/times-a/Arsenal-logo-escudo-shield-2.png'),
+        name: 'Vasco',
+        image: require('../images/times-a/vasco.png'),
         players: [],
         width: 100,
         height: 110
