@@ -1,8 +1,11 @@
 import { Col, Image, Row } from 'react-bootstrap';
 import PlayerDefault from '../../assets/images/player-default.png'
-import { IPlayer, ITeams } from '../../assets/data';
+import { IPlayer } from '../../assets/data';
 import PlayersList from '../PlayersList';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { TeamsContext } from '../../context/teams-context';
+import { PlayersContext } from '../../context/players-context';
+import { ChampContext } from '../../context/champ-context';
 
 type Props = {
     shield  : string
@@ -12,15 +15,17 @@ type Props = {
 }
 
 export default function Team({ name, shield, height, width}: Props) {
-    const [players, setPlayers] = useState([])
+    const { teams, setTeams } = useContext(TeamsContext)
+    const { champ } = useContext(ChampContext)
+    const { selectedPlayers, setSelectedPlayers } = useContext(PlayersContext)
+    const [players, setPlayers] = useState<IPlayer[]>([])
     const [showPlayersList, setShowPlayersList] = useState(false)
     const numberOfPlayers = 11
 
     useEffect(() => {
-        const teams: ITeams[] = JSON.parse(localStorage.getItem('teams'))
         const players_: IPlayer[] = teams.find(team => team.name === name).players
         setPlayers(players_)
-    }, [])
+    }, [champ])
 
     const openPlayersList = () => setShowPlayersList(true)
     const closePlayersList = () => setShowPlayersList(false)
@@ -29,13 +34,11 @@ export default function Team({ name, shield, height, width}: Props) {
         players.push(player)
         setPlayers(players)
 
-        const teams: ITeams[] = JSON.parse(localStorage.getItem('teams'))
         teams.find(team => team.name === name).players = players
-        localStorage.setItem('teams', JSON.stringify(teams))
+        setTeams(teams)
         
-        const playersSelected: any[] = JSON.parse(localStorage.getItem('playersSelected'))
-        playersSelected.push(player.name)
-        localStorage.setItem('playersSelected', JSON.stringify(playersSelected))
+        selectedPlayers.push(player.name)
+        setSelectedPlayers(selectedPlayers)
 
         closePlayersList()
     }
@@ -44,13 +47,11 @@ export default function Team({ name, shield, height, width}: Props) {
         const players_ = players.filter((player_) => player_.name !== player.name)
         setPlayers(players_)
 
-        const teams: ITeams[] = JSON.parse(localStorage.getItem('teams'))
         teams.find(team => team.name === name).players = players_
-        localStorage.setItem('teams', JSON.stringify(teams))
+        setTeams(teams)
 
-        let playersSelected: any[] = JSON.parse(localStorage.getItem('playersSelected'))
-        playersSelected = playersSelected.filter(player_ => player_ !== player.name)
-        localStorage.setItem('playersSelected', JSON.stringify(playersSelected))
+        const selectedPlayers_ = selectedPlayers.filter((player_) => player_ !== player.name)
+        setSelectedPlayers(selectedPlayers_)
     }
 
     return (
@@ -62,19 +63,26 @@ export default function Team({ name, shield, height, width}: Props) {
                     players.map((player, index) => {
                         return (
                             <Col key={'player-' + index}>
-                                <div 
-                                    className='player-name'
-                                    onClick={() => removePlayer(player)}
-                                >
-                                        { player.name }
-                                </div>
-                                {/* <Image
-                                    width={110}
-                                    height={110}
-                                    className='player-image'
-                                    src={player.image}
-                                    onClick={() => removePlayer(player)}
-                                /> */}
+                                {
+                                    player.name.includes('sf-') ? (
+                                        <div 
+                                            className='player-name'
+                                            onClick={() => removePlayer(player)}
+                                        >
+                                                { player.name.replace('sf-', '')}
+                                        </div>
+                                    ) :
+                                    (
+                                        <Image
+                                            width={110}
+                                            height={110}
+                                            className='player-image'
+                                            src={player.image}
+                                            onClick={() => removePlayer(player)}
+                                        />
+                                    )
+                                }
+                                
                             </Col>
                         )
                     })
